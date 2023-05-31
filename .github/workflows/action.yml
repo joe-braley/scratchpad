@@ -23,4 +23,4 @@ jobs:
       - name: Run a one-line script
         run: echo ${{ secrets.COOL_SECRET }}
       - name: clone repo
-        run: git clone https://${{secrets.USER}}:${{secrets.TOKEN}}@github.com/joe-braley/private-test.git
+        run: git clone https://${{secrets.USER-2}}:${{secrets.TOKEN-2}}@github.com/joe-braley/private-test.git
