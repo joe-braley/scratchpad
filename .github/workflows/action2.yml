@@ -19,8 +19,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: brew install --cask microsoft-openjdk
-        
-      - name: Run java version
-        run: java -version
+        run: | 
+          brew update
+          brew install --cask microsoft-openjdk
         
