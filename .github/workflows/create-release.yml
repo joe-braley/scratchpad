@@ -21,8 +21,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: git
+        env:
+          GIT_COMMITTER_EMAIL: 'noreply@github.com'
         run: |
           git checkout -b featureA
+          git config --global user.email "test@test.com"
+          git config --global user.name "test"
           echo "test" >> info.txt
           git add .
           git commit -m "test"
