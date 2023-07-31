@@ -31,4 +31,5 @@ jobs:
           git add .
           git commit -m "test"
           git tag -m "testing" -a v0.0.1
+          git push --set-upstream origin featureA
           git push --follow-tags
